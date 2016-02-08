@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HashExtensions"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Extensions for crypto hashes in NSData and NSString."
   s.description  = <<-DESC
                    Extensions for crypto hashes in NSData and NSString
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.4"
   s.osx.deployment_target = "10.10"
 
-  s.source       = { :git => "https://github.com/anfema/HashExtensions.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/anfema/HashExtensions.git", :tag => "1.0.1" }
 
   s.source_files  = "HashExtensions/*.{h,m}"
   s.public_header_files = "HashExtensions/*.h"
