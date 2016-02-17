@@ -14,15 +14,6 @@
 
 @implementation NSData (Hashing)
 
-- (NSString *)hexString {
-    NSMutableString *string = [[NSMutableString alloc] init];
-    const char *bytes = self.bytes;
-    for (size_t i = 0; i < self.length; i++, bytes++) {
-        [string appendFormat:@"%02x", (uint8_t)*bytes];
-    }
-    return [NSString stringWithString:string];
-}
-
 - (NSData *)cryptoHash:(HashType)hash {
     NSMutableData *result = [[NSMutableData alloc] initWithLength:digestLength(hash)];
     hashFunctionType func = hashFunction(hash);

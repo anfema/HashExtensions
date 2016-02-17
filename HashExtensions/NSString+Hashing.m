@@ -15,10 +15,9 @@
 
 @implementation NSString (Hashing)
 
-- (NSString *)cryptoHash:(HashType)hash {
+- (NSData *)cryptoHash:(HashType)hash {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *hashed = [data cryptoHash:hash];
-    return hashed.hexString;
+    return [data cryptoHash:hash];
 }
 
 @end

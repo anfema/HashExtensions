@@ -14,7 +14,6 @@
 
 @interface NSData (Hashing)
 
-- (NSString *)hexString;
 - (NSData *)cryptoHash:(HashType)hash;
 + (NSData *)cryptoHashWithData:(NSData *)data hash:(HashType)hash;
 

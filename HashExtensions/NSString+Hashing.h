@@ -13,5 +13,5 @@
 #import "HashExtensions.h"
 
 @interface NSString (Hashing)
-- (NSString *)cryptoHash:(HashType)hash;
+- (NSData *)cryptoHash:(HashType)hash;
 @end
